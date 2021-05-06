@@ -1,26 +1,3 @@
---[[
-
-    __      __          _            _       ______  _____ _____    __  __           _       _      
-    \ \    / /         (_)          ( )     |  ____|/ ____|  __ \  |  \/  |         | |     | |     
-     \ \  / /   _ _ __  ___  ___   _|/ ___  | |__  | (___ | |__) | | \  / | ___   __| |_   _| | ___ 
-      \ \/ / | | | '_ \| \ \/ / | | | / __| |  __|  \___ \|  ___/  | |\/| |/ _ \ / _` | | | | |/ _ \
-       \  /| |_| | | | | |>  <| |_| | \__ \ | |____ ____) | |      | |  | | (_) | (_| | |_| | |  __/
-        \/  \__, |_| |_|_/_/\_\\__,_| |___/ |______|_____/|_|      |_|  |_|\___/ \__,_|\__,_|_|\___|
-             __/ |                                                                                  
-            |___/
-            
-    Vynixu's ESP Module v1.0.0a
-    
-    Scripting - Vynixu
-    
-    [ What's new? ]
-    
-    [+] Initial release
-    
-]]--
-
--- Wow it's open source would you look at that. Piss off you fucking skid
-
 local ESP = {
     Container = {},
     Settings = {
@@ -98,7 +75,7 @@ function ESP.Add(plr, root, colour)
             ESP.UpdateVisibility(Holder, root)
             ESP.UpdateColour(Holder)
 
-        elseif Holder.Draw[1].Visible then
+        elseif Holder.Draw.Name.Visible then
             for i, v in next, Holder.Draw do
                 v.Visible = false
             end
@@ -158,7 +135,5 @@ end
 Plr.CharacterAdded:Connect(function(char)
     Char, RootPart = char, char:WaitForChild("HumanoidRootPart")
 end)
-
--- Return
 
 return ESP
