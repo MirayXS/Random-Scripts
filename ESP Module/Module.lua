@@ -59,6 +59,7 @@ function ESP.Add(plr, root, colour)
             Display = Drawing.new("Text"),
             Tracer = Drawing.new("Line"),
         },
+        Connections = {},
         Colour = colour,
     }
 
@@ -77,12 +78,12 @@ function ESP.Add(plr, root, colour)
     Holder.Draw.Tracer.From = BottomMiddle
 
     root.AncestryChanged:Connect(function()
-		if not root:IsDescendantOf(workspace) then
-			ESP.Remove(root)
-		end
+        if not root:IsDescendantOf(workspace) then
+            ESP.Remove(root)
+        end
 	end)
 
-    Holder.Connection = RS.Stepped:Connect(function()
+    Holder.Connections.Connection = RS.Stepped:Connect(function()
         if ESP.Settings.Enabled then
             local Pos, onScreen = ESP.WTVPoint(root.CFrame)
             if Pos and onScreen then
@@ -112,7 +113,9 @@ function ESP.Remove(root)
             for _, x in next, v.Draw do
                 x:Remove()
             end
-            v.Connection:Disconnect()
+            for _, x in next, v.Connections do
+                x:Disconnect()
+            end
             v = nil
         end
     end
