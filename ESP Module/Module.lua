@@ -15,7 +15,7 @@
     
     [ What's new? ]
     
-    [+] Made it easier to add your own connections
+    [*] Made it easier to add your own connections
     
 ]]--
 
