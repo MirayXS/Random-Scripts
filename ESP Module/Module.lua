@@ -81,7 +81,7 @@ function ESP.Add(plr, root, colour)
         if not root:IsDescendantOf(workspace) then
             ESP.Remove(root)
         end
-	end)
+    end)
 
     Holder.Connections.Connection = RS.Stepped:Connect(function()
         if ESP.Settings.Enabled then
