@@ -9,13 +9,13 @@
              __/ |                                                                                  
             |___/
             
-    Vynixu's ESP Module v1.0.0a
+    Vynixu's ESP Module v1.0.0b
     
     Scripting - Vynixu
     
     [ What's new? ]
     
-    [+] Initial release
+    [+] Made it easier to add your own connections
     
 ]]--
 
