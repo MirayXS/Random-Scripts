@@ -9,13 +9,13 @@
              __/ |                                                                                  
             |___/
             
-    Vynixu's ESP Module v1.0.0b
+    Vynixu's ESP Module v1.0.1a
     
     Scripting - Vynixu
     
     [ What's new? ]
     
-    [*] Made it easier to add your own connections
+    [*] Fixed re-adding ESP to an object
     
 ]]--
 
@@ -116,7 +116,7 @@ function ESP.Remove(root)
             for _, x in next, v.Connections do
                 x:Disconnect()
             end
-            v = nil
+            ESP.Container[i] = nil
         end
     end
 end
