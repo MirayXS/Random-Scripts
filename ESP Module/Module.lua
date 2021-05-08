@@ -9,13 +9,14 @@
              __/ |                                                                                  
             |___/
             
-    Vynixu's ESP Module v1.0.1a
+    Vynixu's ESP Module v1.0.2a
     
     Scripting - Vynixu
     
     [ What's new? ]
     
-    [*] Fixed re-adding ESP to an object
+    [+] Added name overwriting
+    [*] Fixed visibility settings
     
 ]]--
 
@@ -48,7 +49,7 @@ local BottomMiddle = Vector2.new(Cam.ViewportSize.X/2, Cam.ViewportSize.Y)
 
 -- Functions
 
-function ESP.Add(plr, root, colour)
+function ESP.Add(plr, root, colour, nameOverwrite)
     if ESP.Container[root] then
         ESP.Remove(root)
     end
@@ -65,7 +66,7 @@ function ESP.Add(plr, root, colour)
 
     ESP.Container[root] = Holder
 
-    Holder.Draw.Name.Text = plr.Name
+    Holder.Draw.Name.Text = nameOverwrite or plr.Name
     Holder.Draw.Name.Color = Holder.Colour
     Holder.Draw.Name.Outline = true
     Holder.Draw.Name.Center = true
@@ -139,9 +140,9 @@ end
 
 function ESP.UpdateVisibility(holder, root)
     local Pos, onScreen = ESP.WTVPoint(root.CFrame)
-    for i, v in next, holder.Draw do
-        v.Visible = (Pos and onScreen)
-    end
+    holder.Draw.Name.Visible = (Pos and onScreen) and ESP.Settings.Enabled
+    holder.Draw.Display.Visible = (Pos and onScreen) and (ESP.Settings.Distance or ESP.Settings.Health) and ESP.Settings.Enabled
+    holder.Draw.Tracer.Visible = (Pos and onScreen) and ESP.Settings.Tracers and ESP.Settings.Enabled
 end
 
 function ESP.UpdateDisplay(holder, root, hum)
