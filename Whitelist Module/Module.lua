@@ -27,6 +27,7 @@ return <table> {
     Key,              -- <integer> Key
     AutoSave,         -- <boolean> AutoSave
     PlaceIdWhitelist, -- <integer> PlaceId
+    Load,             -- <function> Load Whitelist Module
 }
 
 ]]--
