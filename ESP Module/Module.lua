@@ -19,7 +19,7 @@
     
 ]]--
 
--- Wow it's open source would you look at that. Piss off you fucking skid
+-- Wow would you look at that, it's open source! :scream: don't be a fucking leech
 
 local ESP = {
     Container = {},
