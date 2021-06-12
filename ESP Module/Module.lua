@@ -9,13 +9,14 @@
              __/ |                                                                                  
             |___/
             
-    Vynixu's ESP Module v1.0.2b
+    Vynixu's ESP Module v1.0.2a
     
     Scripting - Vynixu
     
     [ What's new? ]
     
-    [*] Fixed an issue with displaying health
+    [+] Added name overwriting
+    [*] Fixed visibility settings
     
 ]]--
 
@@ -94,7 +95,7 @@ function ESP.Add(plr, root, colour, nameOverwrite)
                 Holder.Draw.Display.Position = DisplayPos
                 Holder.Draw.Tracer.To = Vector2.new(Pos.X, Pos.Y)
 
-                ESP.UpdateDisplay(Holder, root, (ESP.IsPlayer(plr) and plr.Character:FindFirstChild("Humanoid")) or (plr.Parent and plr.Parent:FindFirstChild("Humanoid")) or nil)
+                ESP.UpdateDisplay(Holder, root, (ESP.IsPlayer(plr) and plr.Character:FindFirstChild("Humanoid")) or nil)
             end
             ESP.UpdateVisibility(Holder, root)
             ESP.UpdateColour(Holder)
