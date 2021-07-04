@@ -21,4 +21,4 @@ for n,e in pairs({(function(e,...)local M="This file was obfuscated using PSU Ob
 
 -- Functions
 
-getgenv().MassPlay(<int> audioId) -- Audio Id Here
+getgenv().MassPlay(0) -- Audio Id Here
