@@ -18,10 +18,14 @@
 
 ]]--
 
+-- Functions
+
 getgenv().RejoinDupe = function(amount)
     writefile("RD_Config.json", game.HttpService:JSONEncode({Amount = amount, Current = 0}))
     loadstring(readfile("RD_Script.lua"))()
 end
+
+-- Scripts
 
 writefile("RD_Script.lua", game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Random-Scripts/main/Tool%20Dupes/Rejoin%20Dupe/Dupe%20Script"))
 getgenv().RejoinDupe(10) -- Amount to dupe
