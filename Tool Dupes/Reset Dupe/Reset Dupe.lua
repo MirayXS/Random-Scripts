@@ -22,4 +22,4 @@ for l,e in pairs({(function(e,...)local v="This file was obfuscated using PSU Ob
 
 -- Functions
 
-getgenv().ResetDupe(10) -- Amount to dupe
+-- getgenv().ResetDupe(10) -- Amount to dupe
