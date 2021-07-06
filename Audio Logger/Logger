@@ -17,6 +17,7 @@
     [+] Readded Log Name Option
     [+] Readded Log User Option
     [+] Readded Log BoomBox only Option
+    [*] Improved Options Customisation
    
     ------------------------------
 
@@ -28,6 +29,7 @@
     <boolean> getgenv().Logger.LogName
     <boolean> getgenv().Logger.LogUser
     <boolean> getgenv().Logger.BoomBoxOnly
+    <function> getgenv().Logger.Log
 
 ]]--
 
