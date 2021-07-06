@@ -33,9 +33,9 @@
     <boolean> getgenv().Logger.BoomBoxOnly
         [default : false]
     
-    <function> getgenv().Logger.Log(<instance> Sound)
+    <void> getgenv().Logger.Log(<instance> Sound)
         [~] Log a Sound instance
-    <function> getgenv().Logger.LogStored()
+    <void> getgenv().Logger.LogStored()
         [~] Log stored sounds from when logger was disabled
 
 ]]--
