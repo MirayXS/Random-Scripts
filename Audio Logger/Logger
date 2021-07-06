@@ -28,8 +28,8 @@
     <boolean> getgenv().Logger.LogUser     [default : false]
     <boolean> getgenv().Logger.BoomBoxOnly [default : false]
     
-    <function> getgenv().Logger.Log(<instance> Sound) [~] Log a Sound instance]
-    <function> getgenv().Logger.LogStored()           [~] Log stored Sounds from when logger was disabled]
+    <function> getgenv().Logger.Log(<instance> Sound) [~] Log a Sound instance
+    <function> getgenv().Logger.LogStored()           [~] Log stored Sounds from when logger was disabled
 
 ]]--
 
