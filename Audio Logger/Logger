@@ -36,7 +36,7 @@
     <function> getgenv().Logger.Log(<instance> Sound)
         [~] Log a Sound instance
     <function> getgenv().Logger.LogStored()
-        [~] Log stored Sounds from when logger was disabled
+        [~] Log stored sounds from when logger was disabled
 
 ]]--
 
