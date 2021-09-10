@@ -19,7 +19,7 @@
             <table> Config {
                 <string> Name,
             },
-            Tween = {
+            <table> Tween {
                 <int> Duration,
                 <Enum.EasingStyle> Style,
             },
