@@ -29,6 +29,7 @@
             <string> ServerName,
             <string> Code,
             <string> Icon,
+            <boolean> ForcePrompt, [Optional]
         }),
         <function> Close,
         <function> DestroyPrompt,
