@@ -38,7 +38,7 @@
 ----------
 
 <function> Module.JoinServer(<string> inviteCode),
---  [*] Joins server without prompt, will still prompt on their Discord client.
+--  [*] Joins server without Roblox prompt, will still prompt on their Discord client.
 
 ----------
 
