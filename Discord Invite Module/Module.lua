@@ -1,18 +1,17 @@
 --[[
+      _____  _                       _   _____            _ _              __  __           _       _      
+     |  __ \(_)                     | | |_   _|          (_) |            |  \/  |         | |     | |     
+     | |  | |_ ___  ___ ___  _ __ __| |   | |  _ ____   ___| |_ ___ _ __  | \  / | ___   __| |_   _| | ___ 
+     | |  | | / __|/ __/ _ \| '__/ _` |   | | | '_ \ \ / / | __/ _ \ '__| | |\/| |/ _ \ / _` | | | | |/ _ \
+     | |__| | \__ \ (_| (_) | | | (_| |  _| |_| | | \ V /| | ||  __/ |    | |  | | (_) | (_| | |_| | |  __/
+     |_____/|_|___/\___\___/|_|  \__,_| |_____|_| |_|\_/ |_|\__\___|_|    |_|  |_|\___/ \__,_|\__,_|_|\___|
 
-     _____  _                       _   _____            _ _         __  __           _       _      
-    |  __ \(_)                     | | |_   _|          (_) |       |  \/  |         | |     | |     
-    | |  | |_ ___  ___ ___  _ __ __| |   | |  _ ____   ___| |_ ___  | \  / | ___   __| |_   _| | ___ 
-    | |  | | / __|/ __/ _ \| '__/ _` |   | | | '_ \ \ / / | __/ _ \ | |\/| |/ _ \ / _` | | | | |/ _ \
-    | |__| | \__ \ (_| (_) | | | (_| |  _| |_| | | \ V /| | ||  __/ | |  | | (_) | (_| | |_| | |  __/
-    |_____/|_|___/\___\___/|_|  \__,_| |_____|_| |_|\_/ |_|\__\___| |_|  |_|\___/ \__,_|\__,_|_|\___|
+     Discord Invite Module v1.0.1a
 
-    Discord Invite Module v1.0.1a
+     UI - Vynixu (Inspired by Discord)
+     Scripting - Vynixu
 
-    UI - Vynixu (Inspired by Discord)
-    Scripting - Vynixu
-
-    Documentation : github.com/RegularVynixu/Random-Scripts/blob/main/Discord%20Invite%20Module/Documentation.lua
+     Documentation : github.com/RegularVynixu/Random-Scripts/blob/main/Discord%20Invite%20Module/Documentation.lua
 
 ]]--
 
